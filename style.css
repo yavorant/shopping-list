@@ -1,0 +1,29 @@
+/* В рішенні обов’язково повинні бути використані селектори:
+за елементом
+за класом
+за атрибутом
+селектор сусідів “+”
+:hover
+:active
+:checked
+:before і :after
+:nth-child
+Для плавних анімацій використай CSS-код: */
+
+* {
+  margin: 0;
+  padding: 0;
+  border-box: box-sizing;
+  transition: all 0.1s ease-in;
+}
+
+h1,
+h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.shopping-list {
+  width: 100%;
+  height: 100vh;
+}
