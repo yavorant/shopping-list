@@ -4,53 +4,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/x-icon" href="http://flukeout.github.io/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>shopping-list</title>
 </head>
 <body>
   <div class="shopping-list">
 
     <header class="header">
-      <div>
-        <h1>CSS Dinner Shopping List</h1>
+      <div class="header__title--wrapper">
+        <h1 class="header__title">CSS Dinner Shopping List</h1>
       </div>
-      <div>
-        <h4>Let’s go to the mall!</h4>
+      <div class="header__content--wrapper">
+        <h4 class="header__content">Let’s go to the mall!</h4>
       </div>
     </header>
+
     <main class="main">
       
-      <form action="#">
-        <div>
-          <input type="checkbox" id="coding" name="interest" value="coding" />
-          <label for="coding">A lot of pickles<span> (for the next lessons about CSS)</span></label>
+      <form class="form" action="#">
+        <div class="form__item">
+          <input class="form__input" type="checkbox" id="coding" name="interest" value="coding" />
+          <label class="form__label" for="coding">A lot of pickles
+            <span class="form__span" > (for the next lessons about CSS)</span>
+          </label>
         </div>
-        <div>
-          <input type="checkbox" id="music" name="interest" value="music" />
-          <label for="music">10 apples<span> (for more CSS manipulations)</span></label>
+        <div class="form__item">
+          <input class="form__input" type="checkbox" id="music" name="interest" value="music" />
+          <label class="form__label" for="music">10 apples
+            <span class="form__span" > (for more CSS manipulations)</span>
+          </label>
         </div>
-        <div>
-          <input type="checkbox" id="art" name="interest" value="art" />
-          <label for="art">Art<span></span></label>
+        <div class="form__item">
+          <input class="form__input" type="checkbox" id="art" name="interest" value="art" />
+          <label class="form__label" for="art">20 oranges
+            <span class="form__span" > (because they are awesome)</span>
+          </label>
         </div>
-        <div>
-          <input type="checkbox" id="sports" name="interest" value="sports" />
-          <label for="sports">Sports<span></span></label>
+        <div class="form__item">
+          <input class="form__input" type="checkbox" id="sports" name="interest" value="sports" />
+          <label class="form__label" for="sports">13 plates
+            <span class="form__span" > (hm... they always dissapear)</span>
+          </label>
         </div>
-        <div>
-          <input type="checkbox" id="cooking" name="interest" value="cooking" />
-          <label for="cooking">Cooking<span></span></label>
+        <div class="form__item">
+          <input class="form__input" type="checkbox" id="cooking" name="interest" value="cooking" />
+          <label class="form__label" for="cooking">15 bentos</label>
+          <span class="form__span" ></span>
+        </label>
         </div>
-        <div>
-          <input type="checkbox" id="cooking" name="interest" value="cooking" />
-          <label for="cooking">Cooking<span></span></label>
+        <div class="form__item">
+          <input class="form__input" type="checkbox" id="cooking" name="interest" value="cooking" />
+          <label class="form__label" for="cooking">1 bottle of Sake
+            <span class="form__span" > (for my friends)</span>
+          </label>
         </div>
       </form>
 
-      <div>
-        <h4>Bon appetit :)</h4>
-      </div>
+      <footer class="footer">
+        <h4 class="footer__content">Bon appetit :)</h4>
+      </footer>
     </main>
   </div>
 </body>
