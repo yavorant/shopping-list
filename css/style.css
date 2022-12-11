@@ -60,3 +60,20 @@ body {
   text-align: left;
   color: #ff8984;
 }
+
+/* ***** main ***** */
+.main {
+  background-color: #3b3f45;
+}
+
+.form {
+  padding-top: 20px;
+  margin: 0 auto 45px;
+  max-width: 534px;
+}
+
+.form__item {
+}
+
+/* active: */
+/* text-decoration: line-through; */
