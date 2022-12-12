@@ -94,11 +94,6 @@ body {
   text-align: left;
 }
 
-/* OPTION #1 */
-input[type='checkbox']:checked + label.strikethrough {
-  text-decoration: line-through;
-}
-
 /* ***** checkbox ***** */
 
 .container {
@@ -132,8 +127,8 @@ input[type='checkbox']:checked + label.strikethrough {
   background-color: #fff;
 }
 
-/* OPTION #2*/
-.container input:checked ~ input {
+/* Create a line-throgh */
+.container:has(input:checked) {
   text-decoration: line-through;
 }
 
