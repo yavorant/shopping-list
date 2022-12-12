@@ -60,32 +60,61 @@ body {
 }
 
 .form__item {
-  background-color: orange;
-  border: 1px solid red;
-  /* padding: auto 0; */
+  border: 1px solid #3b3f45;
+}
+
+.form__item:nth-of-type(odd) {
+  background-color: #88839e;
+}
+.form__item:nth-of-type(even) {
+  background-color: #9b96ac;
+}
+
+.form__item:hover {
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  background-color: #625e77;
 }
 
 .form__label {
-  background-color: green;
-  width: 30px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-/* The container */
-.form__item {
+.form__span {
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* OPTION #1 */
+input[type='checkbox']:checked + label.strikethrough {
+  text-decoration: line-through;
+}
+
+/* ***** checkbox ***** */
+
+.container {
   display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
-  /* -webkit-user-select: none;
+  position: relative;
+  padding-left: 30px;
+  margin: 15px;
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; */
+  user-select: none;
 }
 
 /* Hide the browser's default checkbox */
-input[type='checkbox'] {
+.container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -98,19 +127,14 @@ input[type='checkbox'] {
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
+  height: 19px;
+  width: 19px;
+  background-color: #fff;
 }
 
-/* On mouse-over, add a grey background color */
-.form__item:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.form__item input:checked ~ .checkmark {
-  background-color: #2196f3;
+/* OPTION #2*/
+.container input:checked ~ input {
+  text-decoration: line-through;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -120,36 +144,29 @@ input[type='checkbox'] {
   display: none;
 }
 
-/* Show the checkmark when checked */
-.form__item input:checked ~ .checkmark:after {
+.container input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.form__item .checkmark:after {
+.container .checkmark:after {
   left: 9px;
   top: 5px;
   width: 5px;
   height: 10px;
-  border: solid white;
+  border: solid #000;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-/*  */
-
-/* active: */
-/* text-decoration: line-through; */
-
 /* ***** footer ***** */
 
 .footer {
-  margin: 0 auto;
+  margin: auto;
   max-width: 534px;
-  padding-bottom: 45px;
-  /* border: 1px solid red; */
+  padding: 1%;
   background-color: #4a4f56;
 }
 
@@ -158,16 +175,3 @@ input[type='checkbox'] {
   margin: 12px auto;
   color: #ff8984;
 }
-
-/* В рішенні обов’язково повинні бу
-ти використані селектори:
-за елементом
-за класом
-за атрибутом
-селектор сусідів “+”
-:hover
-:active
-:checked
-:before і :after
-:nth-child
-Для плавних анімацій використай CSS-код: */
